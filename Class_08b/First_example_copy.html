@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+ function myFunction(){
+    console.log("abc teksta rindas tips: " + typeof "abc");
+    console.log("skaitļa 10 tips: " + typeof 10);
+    console.log("skaitļa 10.5 tips: " + typeof 10.5);    
+    console.log("{firstName:\"John\", lastName:\"Doe\"} konstrukcijas tips: " + typeof {firstName:"John", lastName:"Doe"});    
+    test = "abc";
+    console.log(typeof test);
+    if (typeof test.replaceAlll === "function"){ 
+        console.log(typeof test.replaceAlll);
+        console.log("Jā, replaceAll ir.");
+      }
+    else{
+        console.log(typeof test.replaceAlll);
+        console.log("Nē, replaceAlll funkcija konkrēti šeit nav.");}
+    }
+</script>
+
+<h2>My First JavaScript</h2>
+
+<!-- 
+    NB! JavaScript - case-sensitive - date un Date ir divi dažādi objekti, meodes utt.
+    NB! new    
+    04.10.2018 18:50 
+-->
+
+<button type="button"
+onclick="myFunction();
+         document.getElementById('demo1').innerHTML = new Date().getDate() + '.' + (new Date().getMonth() + 1) + '.' + new Date().getFullYear();
+         document.getElementById('demo2').innerHTML = (new Date().toLocaleString('fi-FI', { timeZone: 'UTC' })).replace('klo', '').slice(0, -3).replaceAll('.', ':');">
+Click me to display Date and Time.
+</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+</body>
+</html> 
