@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="id3">JavaScript Arrays</h2>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="error"></p>
+
+<script>
+try
+{
+const cars = [40, 100, 1, 5, 25, 10, -100, 500]; //["Saab","Sbab","bMW","VW","Opel"];
+document.getElementById("demo1").innerHTML = cars;
+
+const cars_temp = cars;
+document.getElementById("demo2").innerHTML = "Min: " + cars_temp.sort(function(a, b){return a - b})[0];
+
+document.getElementById("demo3").innerHTML = "Max: " + cars_temp[cars_temp.length-1];
+}
+catch(err)
+{
+document.getElementById("error").innerHTML = err;
+}
+</script>
+
+</body>
+</html>
