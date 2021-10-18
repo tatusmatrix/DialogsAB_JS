@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        try {
+            document.getElementById("demo2").innerHTML = "Izdruka no internal script, apraksts iekš <head>";
+        }
+        catch (err) {
+            alert("Kļūda no internal script, apraksts iekš <head>:\n" + err);
+        }
+    </script>
+    <script src="JS/js_external_file.js"></script>
+</head>
+
+<body>
+
+    <p id="demo1">demo1</p>
+    <p id="demo2">demo2</p>
+    <p id="demo3">demo3</p>
+    <!-- <p id="error"></p> -->
+
+    <p id="demo">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Click Me</button>
+
+    <script>
+        try {
+            document.getElementById("demo1").innerHTML = "Izdruka no inline script, apraksts iekš <body>";
+        }
+        catch (err) {
+            alert("Kļūda no inline script, apraksts iekš <body>:\n" + err);
+        }
+    </script>
+ 
+    <script src="JS/js_external_file.js"></script>
+
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+
+</body>
+</html>
