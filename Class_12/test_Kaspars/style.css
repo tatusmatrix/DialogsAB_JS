@@ -1,0 +1,67 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.arr {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-color: black;
+}
+
+.some-bg {
+  background-image: url(./images/grapes-strawberries-pineapple-kiwi-apricot-banana-whole-pineapple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 15px;
+  color: white;
+}
+
+#basket {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+input {
+  background-color: white;
+  height: 80px;
+  width: 250px;
+  font-size: 40px;
+  color: black;
+}
+
+button {
+  width: 255px;
+  height: 60px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#demo {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
