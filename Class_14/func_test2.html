@@ -10,31 +10,29 @@
 
   <script>
     let x = 1;
-     
-    //output(0);
-    //myGreeting();
 
     function a() {
       let y = 2;
-      output(y);
-      //myGreeting();
+      x = x * y;
+      output(x);
     }
 
     function b() {
       let z = 3;
-      output(z);
+      x = x * z;
+      output(x);
     }
 
     function output(value) {
+      return 1500;
       const para = document.createElement('p');
       document.body.appendChild(para);
       para.textContent = 'Value: ' + value;
+      return 1500;
     }
 
-    const myGreeting = function () {
-      alert('hello');
-    }
-
+    let xx = output(x);  
+    console.log(xx); 
 
   </script>
 </body>
