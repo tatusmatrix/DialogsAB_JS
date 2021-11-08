@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        class Student {
+            constructor() {
+                var name = "Aaa";
+                var marks = 80;
+            }
+
+            getName() {
+                return this.name;
+            }
+            setName(name) {
+                this.name = name;
+            }
+
+            getMarks() {
+                return this.marks;
+            }
+            setMarks(marks) {
+                this.marks = marks;
+            }
+
+        }
+
+        var stud = new Student();
+        //stud.name = "Kārlis";
+        stud.setName("John");
+        stud.setMarks(80);
+        document.writeln(stud.getName() + " " + stud.getMarks());
+
+    </script>
+
+</body>
+
+</html>

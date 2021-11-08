@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Function scope example</title>
-</head>
-
 <body>
-    <script src="JS/main.js"></script>
+    <h2>JavaScript Objects</h2>
+    <p id="demo"></p>
 
-    <!-- <script>main1();</script> -->
-    <!-- <script>main2();</script> -->
-    <!-- <script>main3();</script> -->
+    <script>
+        // Create an object:
+        const car = {
+            type: "Fiat", 
+            model: "500",
+             color: "white",
+            fullModel: function () { return this.type + " " + this.model; }
+        };
+        // console.log(typeof car);
+
+        // Display some data from the object:
+        // document.getElementById("demo").innerHTML = "The car type is " + car.type + ' model is ' + car["model"];
+
+        var temp = car.fullModel();
+        
+        document.getElementById("demo").innerHTML = temp;
+
+        car.year = 2010;
+        car.fullModelWithYear = function () { return this.fullModel() + " " + this.year; }
+
+    </script>
 
 </body>
 
