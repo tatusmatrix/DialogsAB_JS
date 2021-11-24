@@ -8,16 +8,25 @@ Viss, kas ir pieteikts ar ```var```, kļūst par ```window``` īpašību vai met
 - ```window.innerWidth``` = (gandrīz) = ```document.documentElement.clientWidth``` = (gandrīz) = ```document.body.clientWidth```
 - ```window.innerHeight``` = (gandrīz) = ```document.documentElement.clientHeight``` = (gandrīz) = ```document.body.clientHeight```  
 [(salīdzinājums)](https://stackoverflow.com/questions/6942785/window-innerwidth-vs-document-documentelement-clientwidth)
-#### Loga atvēršana un aizvēršana
-[Window.open() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)
+#### Loga atvēršana, izmēra izmaiņa, pārvietošana un aizvēršana
+- [Window.open() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)  
+- [Window.resizeTo() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/resizeTo)
+- [Window.resizeBy() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/resizeBy)
+- [Window.moveTo() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/moveTo)
+- [Window.moveBy() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/moveBy)
+- [Window.close() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/close)  
+
+
 ```
 let loga_iestatiijumi = 'height=600,width=800',
     url = 'https://termini.gov.lv/';
 let jsLogs = window.open(url, 'termini', loga_iestatiijumi);
 ```
-**NB!** Ja lapa, no kuras notika atvēršana, ir pārladēta, tad kontrole par atvērto logu var tikt pazaudēta.  
+**NB1!** Lai varētu kontrolēt jaunatvērta loga izmēru utt., tam jābūt atvērtam viena domēnā ietvaros ar logu, no kura tas ir atvērts ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))  
+**NB2!** Ja lapa, no kuras notika atvēršana, ir pārladēta, tad kontrole par atvērto logu var tikt pazaudēta.  
 Paņēmiens kontroles atgūšanai (mēģināt atvērt lapu ar tādu pašu nosaukumu):  
 ```
 reference_uz_logu = window.open('', 'iepriekš_izmantotais_loga_nosaukums', '', true);
 reference_uz_logu.close();
 ```
+**NB3!** Kontrole var eksistēt arī atpakaļ virzienā no atvērta loga uz atvērušo logu ar [window.opener](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener) palīdzību (tādas kontroles bīstamības [apspriešana Nr1](https://mathiasbynens.github.io/rel-noopener/), [apspriešana Nr2](https://owasp.org/www-community/attacks/Reverse_Tabnabbing))
