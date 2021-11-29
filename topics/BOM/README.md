@@ -35,10 +35,13 @@ reference_uz_logu.close();
 **NB3!** Kontrole var eksistēt arī atpakaļ virzienā no atvērta loga uz atvērušo logu ar [window.opener](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener) palīdzību (tādas kontroles bīstamības [apspriešana Nr1](https://mathiasbynens.github.io/rel-noopener/), [apspriešana Nr2](https://owasp.org/www-community/attacks/Reverse_Tabnabbing))
 
 #### Ziņojumi
-[Window.alert() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
+[Window.alert() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) note_test[^note].
+
 
 #### Apstiprinājumi (dialogs ar "jā" un "nē")
 [Window.cofirm() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
 
 #### Dialogs
 [Window.prompt() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) ([datu tipa pārveidošana (katram gadījumam)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))
+
+[^note]: note_test.
