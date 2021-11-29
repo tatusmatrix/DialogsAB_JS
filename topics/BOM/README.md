@@ -35,13 +35,13 @@ reference_uz_logu.close();
 **NB3!** Kontrole var eksistēt arī atpakaļ virzienā no atvērta loga uz atvērušo logu ar [window.opener](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener) palīdzību (tādas kontroles bīstamības [apspriešana Nr1](https://mathiasbynens.github.io/rel-noopener/), [apspriešana Nr2](https://owasp.org/www-community/attacks/Reverse_Tabnabbing))
 
 #### Ziņojumi
-[Window.alert() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) note_test[^note].
+[Window.alert() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) [^note_exec_stop_1].
 
 
 #### Apstiprinājumi (dialogs ar "jā" un "nē")
-[Window.cofirm() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
+[Window.cofirm() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm) [^note_exec_stop_1].
 
 #### Dialogs
-[Window.prompt() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) ([datu tipa pārveidošana (katram gadījumam)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))
+[Window.prompt() apraksts no MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) ([datu tipa pārveidošana (katram gadījumam)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)) [^note_exec_stop_1].
 
-[^note]: note_test.
+[^note_exec_stop_1]: Koda izpilde apstājas līdz lietotājs izdara savu izvēli.
