@@ -99,4 +99,4 @@ Svarīgākās īpašības:
 [Saskarne informācijas par pārlūka loga vēsturi izgūšanai](https://developer.mozilla.org/en-US/docs/Web/API/History)  
 **NB5!** Drošības apsvērumu dēļ apmeklēto lapu saraksts nav pieejams, var tikai pārvietoties. Kā zinām, pārvietojoties, loga kontrole sakās no jaunā atbilstoši lapas saturam.
 
-**Tas nav viss - skat. [Visu saskarņu saraksts no MDN](BOM (Browser Object Model - pārlūka objekta modelis))**
+**Tas nav viss - skat. [Visu saskarņu saraksts no MDN](#bom-browser-object-model---p%C4%81rl%C5%ABka-objekta-modelis)**
