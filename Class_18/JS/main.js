@@ -27,3 +27,23 @@ function window_open_test() {
     }, 9000);
     */
 }
+function taskT(timer_) {
+    console.log('setTimeout Demo! (timer: ' + timer_ + ')')
+}
+let timer1_ = setTimeout(taskT, 5000, 1);
+let timer2_ = setTimeout(taskT, 3000, 2);
+
+function taskI() {
+    console.log('setInterval Demo! ' + interval1_);
+}
+//let interval1_ = setInterval(taskI, 1000);
+
+/*
+for(let i=0;i<100;i++){
+    for(let ii=0;ii<100000000;ii++){
+    ;}
+    console.log('Continue to do something ' + i);
+}
+*/
+
+console.log('Continue to do something ');

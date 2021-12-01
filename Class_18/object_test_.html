@@ -12,6 +12,17 @@
     <!-- <script>main1();</script> -->
     <!-- <script>main2();</script> -->
     <!-- <script>main3();</script> -->
+    <script>
+        console.log(window.location.href);
+        var url = new URL(window.location.href);
+        var a = url.searchParams.get("a");
+        //console.log(a);
+        setTimeout(() => {
+            location.assign('https://www.javascripttutorial.net');
+            //location.replace('https://www.javascripttutorial.net');
+        }, 0);
+        console.log(a);
+    </script>
 
 </body>
 
