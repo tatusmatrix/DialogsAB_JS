@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>mailto Example</title>
+</head>
+
+<body>
+<form id="formElem">
+    <input type="text" name="name" value="John">
+    <input type="text" name="surname" value="Smith">
+    <input type="submit">
+  </form>
+  
+  <script>
+    formElem.onsubmit = async (e) => {
+      e.preventDefault();
+      formData = new FormData(formElem);
+     
+      let response = await fetch('http://127.0.0.1:105/?'+
+                                 'param1='+formData.get('name')+
+                                 '&param2='+formData.get('surname'),
+        {method: 'POST',
+        body: formData
+      });
+  
+      let result = await response.json();
+  
+      alert(result.message);
+    };
+  </script>
+
+</body>
+</html>
